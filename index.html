@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="container1" id="page1">
+      <div class="flex-child1">
+        <h1 class="header">Stay updated!</h1>
+        <p class="text">
+          Join 60,000+ product managers receiving monthly <br />
+          updates on:
+        </p>
+        <ul>
+          <li>
+            <img src="assets/images/icon-list.svg" class="list-icon" alt="" />
+            Product discovery and building what matters
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" class="list-icon" alt="" />
+            Measuring to ensure updates are a success
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" class="list-icon" alt="" />
+            And much more!
+          </li>
+        </ul>
+
+        <form id="form" action="/" method="GET">
+          <div>
+            <div class="msg">
+              <label for="email">Email address</label>
+              <div id="error-msg"></div>
+            </div>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@company.com"
+              onkeyup="validateEmail()"
+            /><br />
+            <button type="submit" id="submit-btn" class="cta">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- <div class="flex-child2"> -->
+      <img
+        src="assets/images/illustration-sign-up-desktop.svg"
+        class="sign-up-img"
+        alt=""
+      />
+      <img
+        src="assets/images/illustration-sign-up-mobile.svg"
+        class="mobile-sign-up-img"
+        alt=""
+      />
+      <!-- </div> -->
+    </div>
+
+    <div class="container2 hidden" id="page2">
+      <div>
+        <img src="assets/images/icon-success.svg" class="icon-success" alt="" />
+        <h1 class="header h1">
+          Thanks for <br />
+          subscribing!
+        </h1>
+        <p class="text">
+          A confirmation email has been sent to <br />
+          <span class="email" id="email-text"></span> Please open it and click
+          the button inside to confirm your subscription.
+        </p>
+      </div>
+      <button class="cta2" id="return-btn">Dismiss message</button>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+
+    <!-- Success message end -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
