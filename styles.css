@@ -156,7 +156,7 @@ input:focus {
   /* display: flex; */
   gap: 3rem;
 
-  max-width: fit-content;
+  max-width: 25rem;
   margin: 0 auto;
   margin-top: 20vh;
 
