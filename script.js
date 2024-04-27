@@ -11,7 +11,7 @@ const returnBtn = document.getElementById("return-btn");
 function validateEmail() {
   if (!email.value.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
     errorElement.textContent = "Valid email required!";
-    email.style.backgroundColor = "hsl(2, 48%, 90%)";
+    email.style.backgroundColor = "hsl(0, 50%, 92%)";
     email.style.color = "hsl(4, 100%, 67%)";
     email.style.borderColor = "hsl(4, 100%, 67%)";
 
